@@ -1,2 +1,7 @@
-# ngdart-admin-md
-stagehand web-angular and some modify with `https://github.com/dart-lang/angular_components/blob/master/examples/app_layout_example/lib/app_layout_example.dart`
+# ngdart_md_admin
+
+A web app that uses [AngularDart](https://webdev.dartlang.org/angular) and
+[AngularDart Components](https://webdev.dartlang.org/components).
+
+Created from templates made available by Stagehand under a BSD-style
+[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
