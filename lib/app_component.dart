@@ -11,7 +11,7 @@ import 'package:angular_components/material_list/material_list_item.dart';
 import 'package:angular_components/material_toggle/material_toggle.dart';
 
 @Component(
-  selector: 'my-app',
+  selector: 'admin-app',
   styleUrls: [
     'package:angular_components/app_layout/layout.scss.css',
     'app_component.css'
@@ -37,10 +37,8 @@ class AppComponent implements AfterViewInit {
   }
 
   void _setSize() {
-    List<Element> els = window.document.querySelectorAll("my-app");
+    Element el = window.document.querySelector("admin-app");
     var h = window.innerHeight;
-    for (var e in els) {
-      e.style.height = h.toString() + "px";
-    }
+    el.style.height = h.toString() + "px";
   }
 }
