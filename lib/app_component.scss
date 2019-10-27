@@ -1,4 +1,5 @@
 @import 'package:angular_components/app_layout/mixins';
+@import 'package:angular_components/app_layout/layout';
 
 :host {
   display: block;
@@ -16,4 +17,25 @@
 .custom-width {
   @include mat-drawer-width(50%);
   @include mat-temporary-drawer-width(50%);
+}
+
+material-content {
+  padding: 10px;
+}
+
+.scrollable-content {
+  bottom: 0;
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  top: $mat-header-height;
+}
+
+.scrollable-menu {
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  position: absolute;
 }

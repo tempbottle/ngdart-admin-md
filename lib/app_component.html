@@ -19,8 +19,8 @@
 </header>
 <material-drawer persistent #drawer="drawer"
                  [class.custom-width]="customWidth"
-                 [attr.end]="end ? '' : null">
-    <material-list *deferredContent>
+                 [attr.end]="end ? '' : null" >
+    <material-list *deferredContent class="scrollable-menu">
         <div group>
             <div label>Mails</div>
             <material-list-item>
@@ -44,7 +44,8 @@
         </div>
     </material-list>
 </material-drawer>
-<div class="material-content">
+
+<material-content class="scrollable-content" >
     <div>
         Lorem ipsum dolor sit amet, ad erat postea ullamcorper nec, veri veniam quo
         et. Diam phaedrum ei mea, quaeque voluptaria efficiantur duo no. Eu adhuc
@@ -58,4 +59,45 @@
         <material-toggle [(checked)]="customWidth" label="custom width">
         </material-toggle>
     </div>
-</div>
+
+    <div class="controls">
+        <h3>Options</h3>
+        <material-toggle [(checked)]="end" label="end">
+        </material-toggle>
+        <material-toggle [(checked)]="customWidth" label="custom width">
+        </material-toggle>
+    </div>
+
+    <div class="controls">
+        <h3>Options</h3>
+        <material-toggle [(checked)]="end" label="end">
+        </material-toggle>
+        <material-toggle [(checked)]="customWidth" label="custom width">
+        </material-toggle>
+    </div>
+
+    <div class="controls">
+        <h3>Options</h3>
+        <material-toggle [(checked)]="end" label="end">
+        </material-toggle>
+        <material-toggle [(checked)]="customWidth" label="custom width">
+        </material-toggle>
+    </div>
+
+    <div class="controls">
+        <h3>Options</h3>
+        <material-toggle [(checked)]="end" label="end">
+        </material-toggle>
+        <material-toggle [(checked)]="customWidth" label="custom width">
+        </material-toggle>
+    </div>
+
+    <div class="controls">
+        <h3>Options</h3>
+        <material-toggle [(checked)]="end" label="end">
+        </material-toggle>
+        <material-toggle [(checked)]="customWidth" label="custom width">
+        </material-toggle>
+    </div>
+
+</material-content>
